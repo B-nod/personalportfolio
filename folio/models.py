@@ -70,5 +70,27 @@ class Project(models.Model):
     image = models.FileField(upload_to='static/uploads', null=True)
     link = models.URLField(max_length=200, null=True)
     
+    def __str__(self):
+        return self.title
+     
+
+class Service(models.Model):
+    name = models.CharField(max_length=200)
+
+    def __str__(self):
+        return self.name
+    
+class Contact(models.Model):
+    name = models.CharField(max_length=200)
+    email = models.EmailField(max_length=200)
+    subject = models.ForeignKey(Service, on_delete=models.CASCADE)
+    message = models.TextField()
+
+    def __str__(self):
+        return self.name
+
+
+    
+    
 
       

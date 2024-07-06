@@ -60,11 +60,15 @@
   overflow: hidden;
 }
 
+
 .page-home {  
   padding: 25px 0;
-  width: 100%;
+  width:100%;
   height: 700px;
   z-index: 99;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .page-home::before {
@@ -74,7 +78,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(62, 57, 57, 0.8);
+  background-color: rgba(0, 0, 0, 0.7);
   z-index: -1;
 }
 
@@ -324,11 +328,7 @@
   overflow: hidden;
 }
 
-.page-portfolio
-{
-  background-color: #171925;
-  color: #fff;
-}
+
 .page-client {
   background-color: #171925;
   color: #fff;

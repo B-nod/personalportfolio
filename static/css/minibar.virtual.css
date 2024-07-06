@@ -343,11 +343,11 @@
 
 .page-home {
     display: block;
-    width: 100%;
+    width: 200px;
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+    background-position: center;
     overflow: hidden;
 }
 

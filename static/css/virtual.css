@@ -22,7 +22,7 @@
 
  */
 
-:root {
+ :root {
     --theme-red: #ef3724;
     --theme-blue: #2960f7;
     --theme-green: #8cc63f;
@@ -565,6 +565,8 @@ a:hover, a:active {
     font-weight: 500;
     padding-top: 12px;
     padding-bottom: 12px;
+    color: #8cc63f !important;
+    text-shadow: 1px 2px 4px rgba(0,0,0,0.5);
 }
 
 .navbar-nav .nav-link {
