@@ -25,6 +25,7 @@ class Skill(models.Model):
         return self.name
 
 class Education(models.Model):
+    title = models.CharField(max_length=200, null=True)
     college_name = models.CharField(max_length=200, null=True)
     college_address = models.CharField(max_length=200, null=True)
     date_frm = models.DateField()
