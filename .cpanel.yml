@@ -1,0 +1,6 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/binodtamang/public_html/
+    - /bin/cp * $DEPLOYPATH
+  
