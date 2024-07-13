@@ -7,7 +7,7 @@ from django.contrib import messages
 def homepage(request):
     prot = Prot.objects.all()
     skill = Skill.objects.all()
-    education = Education.objects.all()
+    education = Education.objects.all().order_by('-id')
     experience = Experience.objects.all()
     client = Client.objects.all()
     project = Project.objects.all()

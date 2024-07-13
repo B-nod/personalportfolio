@@ -16,10 +16,18 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
+from django.views.generic import RedirectView
+from django.contrib.auth import logout
+from django.shortcuts import redirect
 
+def logout_user(request):
+    logout(request)
+    return redirect('/admin/login')
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('folio.urls')),
     path('admins/', include('admins.urls')),
+    # path('logout/', RedirectView.as_view(url='/admin/logout/')),
+    path('logout/', logout_user, name='logout')
  
 ]
